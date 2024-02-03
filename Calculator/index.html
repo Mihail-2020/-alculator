@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+	<div class="container">
+
+		<div class="wrapper">
+			<h1 class="title">Calculator</h1>
+
+			<div class="column">
+				<div class="column__item">
+					<div class="input__box">
+		
+						<label for="Num1">Number1(X)</label>
+						<input name="Num1" type="text" id="number1" class="input__num" />
+		
+						<label for="Num2">Number2(y)</label>
+						<input name="Num2" type="text" id="number2" class="input__num" />
+		
+					</div>
+				
+					<div class="calc__btn" id="operators-panel">
+						<button type="button" class="btn" id="plus">+</button>
+						<button type="button" class="btn" id="minus">-</button>
+						<button type="button" class="btn" id="multiply">&#215;</button>
+						<button type="button" class="btn" id="divide">/</button>
+						<button type="button" class="btn" id="pow">X<sup>y</sup></button>
+						<button type="button" class="btn" id="arrow">arrow</button>
+						<div class="dropdown">
+							<button type="button" class="button" id="percent">%</button>
+							<button type="button" class="button" id="root">Корень (X)</button>
+							<button type="button" class="button" id="logarithm">Логарифм (X)</button>
+							<button type="button" class="button" id="sine">Синус (X)</button>
+							<button type="button" class="button" id="tangent">Тангенс (X)</button>
+							<button type="button" class="button" id="operation2">1/(X)</button>
+						</div>
+					</div>
+				</div>
+		
+				<div class="column__item">
+		
+					<h2 class="subtitle">Результат:</h2>
+					<div class="result" id="result"></div>
+		
+					<h2 class="subtitle">Ошибки:</h2>
+					<div class="result error" id="error"></div>
+					
+		
+					<button id="btn__clear" class="btn__clear">
+						Очистить
+					</button>
+		
+				</div>
+	  
+			</div><!-- .column -->
+	  
+			<div class="history">
+				<h2 class="subtitle">История</h2>
+				<ul class="history__list">
+
+				</ul>
+			</div>
+		</div><!-- .wrapper -->
+	</div><!-- .container -->
+
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
